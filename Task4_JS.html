@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 - JavaScript</title>
+</head>
+
+<body>
+    <p>
+        <button id="date" onclick="dateDisplay();">Show Date</button>
+        <br />
+        <span id="dateField"></span>
+    </p>
+
+    <p>
+        <button id="time" onclick="timeDisplay()">Show Time</button>
+        <br />
+        <span id="timeField"></span>
+    </p>
+
+    <script>
+        function dateDisplay() {
+            var myDate = new Date();
+            dateString =
+                myDate.getDate() +
+                "/" +
+                myDate.toLocaleDateString("default", { month: "long" }) +
+                "/" +
+                myDate.getFullYear();
+            document.getElementById("dateField").innerHTML = dateString;
+        }
+
+        function timeDisplay() {
+            var myTime = new Date();
+            document.getElementById("timeField").innerHTML = myTime;
+        }
+    </script>
+</body>
+
+</html>

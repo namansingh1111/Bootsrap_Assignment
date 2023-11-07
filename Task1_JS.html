@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Prompt the user to enter a number
+        let n = window.prompt("Enter the Number you want to Reverse ");
+
+        // Convert the number to a string
+        nString = String(n);
+
+        // Function to reverse the number entered 
+        function reverseNumber(n) {
+            // split method - to split string into string arrays
+            // reverse method - to reverse the string array
+            document.writeln("<h1> The Reversed No. is as follows : " + n.split("").reverse().join("") + "</h1>")
+        }
+
+        // Calling the function
+        reverseNumber(nString);
+    </script>
+</body>
+
+</html>

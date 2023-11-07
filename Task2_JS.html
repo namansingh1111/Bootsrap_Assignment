@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Prompt the user to enter a number
+        let str = window.prompt("Enter the string you want to sort alphabetically.");
+
+        // Function to sort the string alphabetically 
+        function sortAlphabetically(str) {
+            // split method - to split string into string arrays
+            // sort method - to sort in alphabetical order
+            document.writeln("<h1> The string sorted in the alphabetical order is as follows : " + str.split("").sort().join("") + "</h1>")
+        }
+
+        // Calling the function
+        sortAlphabetically(str);
+    </script>
+</body>
+
+</html>
